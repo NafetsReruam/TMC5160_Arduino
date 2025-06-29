@@ -309,7 +309,7 @@ namespace TMC5160_Reg {
   /* stallGuard2 value and driver error flags */
   union DRV_STATUS_Register {
     uint32_t value;
-    BitField< 0, 9> sg_result; // stallGuard2 result or motor temperature estimation in stand still
+    BitField< 0, 10> sg_result; // stallGuard2 result or motor temperature estimation in stand still
     BitField<12>    s2vsa; // short to supply indicator phase A
     BitField<13>    s2vsb; // short to supply indicator phase B
     BitField<14>    stealth; // stealthChop indicator
